@@ -33,14 +33,15 @@ export default function App() {
 			<h1 className='header'>To Do List</h1>
 			<ul className='list'>
 				{todos.map(todo => {
-          return
+          return (
             <li>
               <label>
                 <input type='checkbox' checked={todo.completed} />
                 {todo.title}
               </label>
               <button className='btn btn-danger'>Delete</button>
-            </li>;
+            </li>
+          );
 				})}
 			</ul>
 		</>
